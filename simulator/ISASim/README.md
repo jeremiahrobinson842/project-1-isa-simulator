@@ -96,8 +96,6 @@ while the program runs, no output files are written. The simulator reports:
 | `maxFinderInt.asm`, `maxFinderInt.mem`, `maxFinderIntNeg.mem` (+ `.expected`) | Integer MAXFINDER and its two data sets |
 | `maxFinderFP.asm`, `maxFinderFP.mem`, `maxFinderFPNeg.mem` (+ `.expected`) | Floating-point MAXFINDER and its two data sets |
 
-The benchmark files are copies of `benchmarks/ISAbench` in our team repository.
-
 ## How the simulator works
 
 `isaSim.c` follows the hardware closely:
