@@ -6,18 +6,12 @@
 
 ## Overview
 
-isaSim simulates our team's 32-bit ISA (the ISA specification submitted
-Oct 5) one instruction at a time. It reads a benchmark written in our
+isaSim simulates our team's 32-bit ISA one instruction at a time. It reads a benchmark written in our
 assembly language and a memory file giving the starting contents of data
 memory. It runs the benchmark either straight through (`-r`) or step by step
 (`-s`). At HALT it prints how many times each instruction ran, writes those
 counts to a `.instrCount` file, and writes the final data memory to a
 `.mem.out` file.
-
-## Reflection
-
-> **TEAM: replace this note with your reflection before submitting.** Write
-> about what went well, what was hard, and what you would do differently.
 
 ## Compiling and Using
 
@@ -181,13 +175,3 @@ team used to build the benchmarks (`isaref.py`). We also tested:
 - **Build:** compiles with no warnings under
   `gcc -std=c99 -Wall -Wextra -pedantic`, and runs clean under the address and
   undefined-behavior sanitizers.
-
-## Extra credit
-
-In step mode, typing a number N executes N instructions before pausing and
-displaying the state.
-
-## Sources used
-
-- Our ISA specification (ISAspec) and benchmarks (ISAbench).
-- The Project 1 handout (CompArchProj1_FA26_UPDATE.pdf).
