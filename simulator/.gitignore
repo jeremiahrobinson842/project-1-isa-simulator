@@ -1,0 +1,5 @@
+# built binary (build it on onyx with make; don't submit a binary built elsewhere)
+ISASim/isaSim
+# files the simulator writes
+*.mem.out
+*.instrCount
